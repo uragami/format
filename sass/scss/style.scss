@@ -1,0 +1,19 @@
+// @import 'bourbon/bourbon';
+@import '_normalize.scss';
+@import '_reset.scss';
+@import '_variable.scss';
+@import '_font.scss';
+@import '_anchor.scss';
+@import '_background.scss';
+@import '_border.scss';
+@import '_radius.scss';
+@import '_clearfix.scss';
+
+
+
+/* text */
+.txtCenter {text-align: center;}
+.left {float:left; display:block;}
+.right {float:right; display:block;}
+
+.txtB {font-weight:bold;}

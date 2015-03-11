@@ -1,0 +1,7 @@
+@charset "utf-8";
+
+// background
+@mixin bgSet($bgPos...) {
+	background-position: $bgPos;
+	background-repeat: no-repeat;
+}

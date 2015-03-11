@@ -1,0 +1,21 @@
+@charset "utf-8";
+
+
+// aで使用
+// ex>
+// a {
+// 	@include anchor-style('underline', 'none', #000, #fff)
+// }
+@mixin anchor-style($getStyle1, $getStyle2, $aColor1, $aColor2) {
+	&:link {
+		text-decoration: $getStyle1;
+		color:$aColor1;
+	}
+	&:hover, &:active, &:visited {
+		text-decoration: $getStyle2;
+		color:$aColor2;
+	}
+}
+
+
+

@@ -1,0 +1,58 @@
+@charset "utf-8";
+
+/* =================================================================
+		Reset Styles
+================================================================= */
+
+html {
+	font-size:62.5%;
+}
+
+
+html, body, div, h1, h2, h3, h4, h5, h6,
+p, blockquote, pre, address,
+ul, ol, li, dl, dt, dd,
+table, th, td,
+form, fieldset {
+	font-weight: normal;
+	font-family: "Hiragino Kaku Gothic Pro W3","ヒラギノ角ゴ Pro W3",Meiryo,"メイリオ","MS P Gothic","ＭＳ Ｐゴシック",sans-serif;
+	line-height: 1.5;
+	margin: 0;
+	padding: 0;
+}
+em {
+	font-style:normal;
+	font-weight:bold;
+}
+
+/* HTML5 */
+article, aside, figure, figcaption, footer, header,
+hgroup, nav, section, summary{
+	display: block;
+}
+
+div {
+	box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+}
+
+img {
+	border: none;
+	box-shadow: 0px 0px 0px #000;
+    width: 100%;
+    height:auto;
+    vertical-align: top;
+}
+
+:focus {
+  outline: none;
+}
+
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+ }
+
+

@@ -1,0 +1,22 @@
+@charset "utf-8";
+
+// position:absolute;
+// top left
+@mixin absoluteSet-TL($top: 0px, $left: 0px){
+	top: $top;
+	left: $left;
+	position: absolute;
+}
+// top right
+@mixin absoluteSet-TR($top: 0px, $right: 0px){
+	top: $top;
+	right: $right;
+	position: absolute;
+}
+
+// right bottom
+@mixin absoluteSet-BR($bottom: 0px, $right: 0px){
+	bottom: $bottom;
+	right: $right;
+	position: absolute;
+}

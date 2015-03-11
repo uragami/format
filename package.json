@@ -1,0 +1,23 @@
+{
+  "name": "gulptest",
+  "version": "1.0.0",
+  "description": "テストプロジェクト",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "gulp",
+    "uragami"
+  ],
+  "author": "frontainer",
+  "license": "MIT",
+  "devDependencies": {
+    "browser-sync": "^2.2.3",
+    "gulp": "^3.8.11",
+    "gulp-frontnote": "^0.1.0",
+    "gulp-notify": "^2.2.0",
+    "gulp-plumber": "^0.6.6",
+    "gulp-sass": "^1.3.3"
+  }
+}

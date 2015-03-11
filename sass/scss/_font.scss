@@ -1,0 +1,38 @@
+@charset "utf-8";
+
+
+/* font-family */ 
+
+// ゴシック
+@mixin ff_gothic($fsize1: 14px, $fsize2: 1.4rem, $lh: 180%, $weight: normal) {
+	font-size: $fsize1;
+	font-size: $fsize2;
+	line-height:$lh;
+	font-weight:$weight;
+	font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+}
+
+// 明朝
+@mixin ff_mincho($fsize1: 14px, $fsize2: 1.4rem, $lh: 180%, $weight: normal) {
+	font-size: $fsize1;
+	font-size: $fsize2;
+	line-height:$lh;
+	font-weight:$weight;
+	font-family:"ヒラギノ明朝 Pro W6", "Hiragino Mincho Pro", "HGS明朝E", "ＭＳ Ｐ明朝", serif;
+}
+
+// フォントサイズ
+@mixin fs($size: 14) {
+    font-size: $size + px;
+    font-size: ($size / 10)  + rem;
+}
+
+
+
+
+
+
+
+
+
+

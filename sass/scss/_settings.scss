@@ -1,0 +1,54 @@
+@charset "utf-8";
+
+
+
+// boxSize
+@mixin boxSize($w: 0px, $h: 0px){
+	width: $w;
+	height: $h;
+}
+
+// background
+@mixin bgSet($bgPos...) {
+	background-position: $bgPos;
+	background-repeat: no-repeat;
+}
+
+// transform
+@mixin transForm($trsValue1,$trsValue2) {
+	-webkit-transform:scale($trsValue1,$trsValue2);
+	-moz-transform:scale($trsValue1,$trsValue2);
+	-ms-transform:scale($trsValue1,$trsValue2);
+	-o-transform:scale($trsValue1,$trsValue2);
+	transform:scale($trsValue1,$trsValue2);
+}
+
+// transration
+@mixin transration($value){
+	-webkit-transition:$value ease-in-out;
+	-moz-transition:$value ease-in-out;
+	-ms-transition:$value ease-in-out;
+	-o-transition:$value ease-in-out;
+	transition:$value ease-in-out;
+}
+
+// 1行のテキストを上下中央に配置 
+@mixin middleline($height, $ie: 0){
+    height: $height + px;
+    line-height: $height + px;
+    &:not(:target){
+        line-height: $height + $ie + px + \9;
+    }
+    :root & {
+        line-height: $height + $ie + px + \9;
+    }
+}
+
+// 左右が丸い
+@mixin rounded($height, $display: inline-block){
+    $space: round($height / 2) + px;
+    display: $display;
+    padding: 0 $space;
+    @include radius($height);
+    @include middleline($height);
+}
